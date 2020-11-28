@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Abandoned Village</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @font-face{
+                font-family: myFont;
+                src: url(SpecialElite-Regular.ttf);
+            }
+            body{
+                font-family: myFont;
+            }
+        </style>
+        <script>
+            var imageNum = 1;
+            function changeImage(){
+                document.getElementById("mainImage").style.backgroundImage = "url('page" + imageNum + ".png')"
+                imageNum++;
+                if(imageNum == 9)
+                    imageNum = 1;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div onclick="location.href='page1.html'"; style="background-image:url(page1small.png)"></div>
+            <div onclick="location.href='page2.html'"; style="background-image:url(page2small.png)"></div>
+            <div onclick="location.href='page3.html'"; style="background-image:url(page3small.png)"></div>
+            <div onclick="location.href='page4.html'"; style="background-image:url(page4small.png)"></div>
+        </div>
+        <div class="flex-container">
+            <div onclick="location.href='page5.html'"; style="background-image:url(page5small.png)"></div>
+            <div onclick="location.href='page6.html'"; style="background-image:url(page6small.png)"></div>
+            <div onclick="location.href='page7.html'"; style="background-image:url(page7small.png)"></div>
+            <div onclick="location.href='page8.html'"; style="background-image:url(page8small.png)"></div>
+        </div>
+        <p style="padding:20px; margin:40px; line-height:140%; border: 1px solid black;" class="writing">
+            <u>Journal Entry (9/02/02)</u><br><br>
+            The above images are a collection of photographs taken on a visit to the abandoned village of Ishingania, with the express purpose to document its current condition and possibly uncover
+            any undiscovered clues to the reason for its desertion. The decades of neglect are evident, with homes and buildings in various states of disarray. It's peculiar how some houses 
+            appear to be in complete shambles, while others have been damaged yet not entirely demolished. Scratched and paint chipped walls can be expected when entering any residence, and nearly 
+            all drawers and cabinets have been stripped of any items they may have once contained. It's unclear whether the items were taken by the families themselves before their departure from the village, or 
+            if wild animals or looting are responsible for this. <br> <br>
+
+            Vegetation has found its way onto the walls and roofs of most houses and structures, further demonstrating the complete state of abandonment that this town has
+            experienced over the recent years. With the amount of time that has passed since its original desertion, it comes as a surprise that the entire village isn't entirely overgrown. However,
+            the less than ideal climate and weather conditions may be able to account for the unpredictable behavior of plant life in the area. While many photographs were taken as documentation of the town's
+            contemporary status, results still remain inconclusive as to why this town was abandoned all those decades ago. It's <strike>possible</strike> likely that the secrets of the village have already died 
+            upon its initial abandoment, but I firmly believe that this location is worth coming back to explore further in the future. </p>
+    </body>
+</html>
